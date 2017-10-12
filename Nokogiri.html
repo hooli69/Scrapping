@@ -1,0 +1,6 @@
+require 'rubygems'
+require 'nokogiri'        
+
+page = Nokogiri::HTML(open("http://www.wikipedia.org/"))   
+puts page.class   # => Nokogiri::HTML::Document
+
